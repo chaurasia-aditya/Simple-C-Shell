@@ -1,11 +1,12 @@
 #include "cmd_exec.h"
 #include "func_impl.h"
 
-// Array of supported functions
+// Array of supported commands
 SupportedCmd supportedCmds[] = {
     {"cd", cd_impl},
     {"exit", exit_impl},
-    {"env", env_impl}
+    {"env", env_impl},
+	{"pwd", pwd_impl}
 };
 
 #define NUM_SUPPORTED (sizeof(supportedCmds) / sizeof(SupportedCmd))
@@ -19,7 +20,7 @@ SupportedCmd supportedCmds[] = {
  *
  * @cmd_args: An array of strings representing the command and its arguments.
  *
- * Return: Returns 1 on successful execution of a built-in command,
+ * Return: Returns response from command handler on execution of a supported command,
  *         or -1 if the command is not supported.
  */
 int execute_cmd(char **cmd_args)

@@ -3,7 +3,7 @@
 /**
  * exit_impl - Exit the shell.
  *
- * This function implements the "exit" built-in command for terminating the shell.
+ * This function implements the "exit" command for terminating the shell.
  * If an argument is provided, it is interpreted as the exit status; otherwise, the default exit status is 0.
  *
  * @args: An array of command-line arguments. The first argument is expected to be "exit",

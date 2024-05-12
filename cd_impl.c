@@ -3,7 +3,7 @@
 /**
  * cd_impl - Change the working directory of the current shell execution environment.
  *
- * This function implements the "cd" built-in command to change the current working directory.
+ * This function implements the "cd" command to change the current working directory.
  * If no argument is provided, an error message is printed to stderr.
  * If the specified directory does not exist or cannot be accessed, an error message is printed using perror.
  *
