@@ -6,7 +6,8 @@ SupportedCmd supportedCmds[] = {
     {"cd", cd_impl},
     {"exit", exit_impl},
     {"env", env_impl},
-	{"pwd", pwd_impl}
+	{"pwd", pwd_impl},
+	{"ls", ls_impl}
 };
 
 #define NUM_SUPPORTED (sizeof(supportedCmds) / sizeof(SupportedCmd))

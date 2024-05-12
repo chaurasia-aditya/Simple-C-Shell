@@ -12,5 +12,6 @@ int cd_impl(char **args);
 int exit_impl(char **args);
 int env_impl(char **args);
 int pwd_impl(char **args);
+int ls_impl(char **args);
 
 #endif
