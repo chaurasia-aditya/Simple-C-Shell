@@ -34,7 +34,7 @@ char *read_cmd(void)
 			exit(EXIT_FAILURE);
 		}
 	}
-	return (cmd);
+	return cmd;
 }
 
 /**

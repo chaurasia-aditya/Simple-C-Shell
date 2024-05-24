@@ -12,6 +12,10 @@ SRCS += $(wildcard $(SRCDIR)/impl/*.c)  # Include implementation files
 OBJS := $(SRCS:$(SRCDIR)/%.c=$(OBJDIR)/%.o)
 TARGET = $(BINDIR)/shell
 
+ifdef RUN_UNSUPPORTED_CMD #To run unsupported commands using execve
+CFLAGS += -DRUN_UNSUPPORTED_CMD
+endif
+
 .PHONY: all clean
 
 all: $(TARGET)

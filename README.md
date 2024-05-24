@@ -33,11 +33,15 @@ This project is a simple shell implementation in C.
 └── README.md
 ```
 
-## Dependencies
+<!-- ## Dependencies -->
 
 ## Building the Project
 ```bash
 make
+```
+### Building to execute unsupported commands
+```bash
+make RUN_UNSUPPORTED_CMD=1
 ```
 
 ## Usage

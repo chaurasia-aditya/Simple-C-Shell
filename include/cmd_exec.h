@@ -10,4 +10,8 @@ char **tokenize_cmd(char *line);
 
 int execute_cmd(char **args);
 
+#ifdef RUN_UNSUPPORTED_CMD
+int execute_unsupported_cmd(char **args);
+#endif
+
 #endif
